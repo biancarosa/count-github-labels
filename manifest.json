@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Count Github Labels - Project Board",
+  "version": "1.0",
+
+  "description": "Counts github labels on a project board.",
+
+  "icons": {
+    "48": "icons/count-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["count_labels.js"]
+    }
+  ]
+
+}
